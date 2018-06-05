@@ -2,14 +2,17 @@
 
 Public Class Main
 
+    'inner join
+    'update
+
     Private Sub QueryButton_Click(sender As Object, e As EventArgs) Handles QueryButton.Click
         Timer2.Start()
         ShowQuery.Show()
     End Sub
 
-    Private Sub TransButton_Click(sender As Object, e As EventArgs) Handles TransButton.Click
+    Private Sub TransButton_Click(sender As Object, e As EventArgs) Handles InsertButton.Click
         Timer2.Start()
-        InsertQuery.Show()
+        InserTable.Show()
     End Sub
 
     Private Sub ViewTablesButton_Click(sender As Object, e As EventArgs) Handles ViewTablesButton.Click
@@ -28,5 +31,10 @@ Public Class Main
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         Transition.FadeOut(Me, Timer2)
+    End Sub
+
+    Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
+        Timer2.Start()
+        UpdateTable.Show()
     End Sub
 End Class

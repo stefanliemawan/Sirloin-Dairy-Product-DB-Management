@@ -24,7 +24,7 @@ Partial Class Main
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.QueryButton = New System.Windows.Forms.Button()
-        Me.TransButton = New System.Windows.Forms.Button()
+        Me.InsertButton = New System.Windows.Forms.Button()
         Me.ViewTablesButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -34,6 +34,7 @@ Partial Class Main
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.UpdateButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'QueryButton
@@ -48,17 +49,17 @@ Partial Class Main
         Me.QueryButton.Text = "Show Query"
         Me.QueryButton.UseVisualStyleBackColor = False
         '
-        'TransButton
+        'InsertButton
         '
-        Me.TransButton.BackColor = System.Drawing.Color.Black
-        Me.TransButton.Font = New System.Drawing.Font("Constantia", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TransButton.ForeColor = System.Drawing.SystemColors.Control
-        Me.TransButton.Location = New System.Drawing.Point(285, 257)
-        Me.TransButton.Name = "TransButton"
-        Me.TransButton.Size = New System.Drawing.Size(220, 100)
-        Me.TransButton.TabIndex = 25
-        Me.TransButton.Text = "InsertTable"
-        Me.TransButton.UseVisualStyleBackColor = False
+        Me.InsertButton.BackColor = System.Drawing.Color.Black
+        Me.InsertButton.Font = New System.Drawing.Font("Constantia", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InsertButton.ForeColor = System.Drawing.SystemColors.Control
+        Me.InsertButton.Location = New System.Drawing.Point(285, 257)
+        Me.InsertButton.Name = "InsertButton"
+        Me.InsertButton.Size = New System.Drawing.Size(220, 48)
+        Me.InsertButton.TabIndex = 25
+        Me.InsertButton.Text = "InsertTable"
+        Me.InsertButton.UseVisualStyleBackColor = False
         '
         'ViewTablesButton
         '
@@ -155,6 +156,18 @@ Partial Class Main
         'Timer2
         '
         '
+        'UpdateButton
+        '
+        Me.UpdateButton.BackColor = System.Drawing.Color.Black
+        Me.UpdateButton.Font = New System.Drawing.Font("Constantia", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UpdateButton.ForeColor = System.Drawing.SystemColors.Control
+        Me.UpdateButton.Location = New System.Drawing.Point(285, 311)
+        Me.UpdateButton.Name = "UpdateButton"
+        Me.UpdateButton.Size = New System.Drawing.Size(220, 46)
+        Me.UpdateButton.TabIndex = 35
+        Me.UpdateButton.Text = "UpdateTable"
+        Me.UpdateButton.UseVisualStyleBackColor = False
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -162,6 +175,7 @@ Partial Class Main
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BackgroundImage = Global.FinalProject.My.Resources.Resources.cow_www_TheWallpapers_org__1024x640_
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.UpdateButton)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -169,7 +183,7 @@ Partial Class Main
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ViewTablesButton)
         Me.Controls.Add(Me.QueryButton)
-        Me.Controls.Add(Me.TransButton)
+        Me.Controls.Add(Me.InsertButton)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
@@ -181,7 +195,7 @@ Partial Class Main
     End Sub
 
     Friend WithEvents QueryButton As Button
-    Friend WithEvents TransButton As Button
+    Friend WithEvents InsertButton As Button
     Friend WithEvents ViewTablesButton As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
@@ -191,4 +205,5 @@ Partial Class Main
     Friend WithEvents Label6 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents UpdateButton As Button
 End Class

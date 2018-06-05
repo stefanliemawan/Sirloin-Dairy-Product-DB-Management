@@ -49,11 +49,18 @@ Public Class ViewTransaction
 
         str = "Server=localhost; user id=root; password=lala; database=sirloin; SslMode=none"
         con = New MySqlConnection(str)
-
+        'query tambah inner join
         Try
             con.Open()
 
-            query = "SELECT * FROM Transaction"
+            query = "SELECT Transaction.date, Transaction.transaction_id, Branch.branch_location, Customer.customer_name, Product.product_name, Transaction.quantity
+
+                    FROM (((Transaction
+
+                    INNER JOIN Branch ON Transaction.branch_id = Branch.branch_id)
+                    INNER JOIN Customer ON Transaction.customer_id = Customer.customer_id)
+                    INNER JOIN Product ON Transaction.product_id = Product.product_id);"
+
             comm = New MySqlCommand(query, con)
             sda.SelectCommand = comm
             sda.Fill(data)

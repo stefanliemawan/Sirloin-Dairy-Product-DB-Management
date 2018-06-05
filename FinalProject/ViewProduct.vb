@@ -53,7 +53,9 @@ Public Class ViewProduct
         Try
             con.Open()
 
-            query = "SELECT * FROM Product"
+            query = "SELECT Product.product_id, Product.product_name, Product.product_category, Branch.branch_location 
+                    FROM Product
+                    INNER JOIN Branch ON Product.branch_id = Branch.branch_id"
             comm = New MySqlCommand(query, con)
             sda.SelectCommand = comm
             sda.Fill(data)

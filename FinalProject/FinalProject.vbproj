@@ -78,16 +78,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InserTable.Designer.vb">
+      <DependentUpon>InserTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InserTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ShowQuery.Designer.vb">
       <DependentUpon>ShowQuery.vb</DependentUpon>
     </Compile>
     <Compile Include="ShowQuery.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InsertQuery.Designer.vb">
-      <DependentUpon>InsertQuery.vb</DependentUpon>
-    </Compile>
-    <Compile Include="InsertQuery.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Transition.vb" />
@@ -95,6 +95,12 @@
       <DependentUpon>Main.vb</DependentUpon>
     </Compile>
     <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTable.Designer.vb">
+      <DependentUpon>UpdateTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTable.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View.vb">
@@ -157,14 +163,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="InserTable.resx">
+      <DependentUpon>InserTable.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShowQuery.resx">
       <DependentUpon>ShowQuery.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InsertQuery.resx">
-      <DependentUpon>InsertQuery.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTable.resx">
+      <DependentUpon>UpdateTable.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View.resx">
       <DependentUpon>View.vb</DependentUpon>

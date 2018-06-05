@@ -54,7 +54,9 @@ Public Class ViewPricing
         Try
             con.Open()
 
-            query = "SELECT * FROM Pricing"
+            query = "SELECT Product.product_name,Pricing.product_cost, Pricing.product_price, Pricing.product_gross_profit
+                    FROM Pricing
+                    INNER JOIN Product ON Pricing.product_id = Product.product_id"
             comm = New MySqlCommand(query, con)
             sda.SelectCommand = comm
             sda.Fill(data)

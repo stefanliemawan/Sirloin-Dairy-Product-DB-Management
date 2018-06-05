@@ -53,7 +53,9 @@ Public Class ViewStaff
         Try
             con.Open()
 
-            query = "SELECT * FROM Staff"
+            query = "SELECT Staff.staff_id, Staff.staff_name, Staff.staff_age, Staff.staff_gender, Staff.staff_phone, Staff.staff_position, Staff.staff_office, Branch.branch_location
+                    FROM Staff
+                    INNER JOIN Branch ON Staff.branch_id = Branch.branch_id"
             comm = New MySqlCommand(query, con)
             sda.SelectCommand = comm
             sda.Fill(data)
