@@ -150,7 +150,7 @@ Public Class ShowQuery
 
             con.Close()
         Catch ex As Exception
-            MessageBox.Show("An error occured while selecting : " + ex.Message)
+            MessageBox.Show("An error occured while selecting : " + query)
         End Try
 
         GroupBox1.Visible = True

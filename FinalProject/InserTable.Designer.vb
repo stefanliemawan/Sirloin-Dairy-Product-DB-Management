@@ -62,6 +62,7 @@ Partial Class InserTable
         Me.Label1.Size = New System.Drawing.Size(66, 26)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Label1"
+        Me.Label1.Visible = False
         '
         'Label2
         '
@@ -74,6 +75,7 @@ Partial Class InserTable
         Me.Label2.Size = New System.Drawing.Size(70, 26)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Label2"
+        Me.Label2.Visible = False
         '
         'Label3
         '
@@ -86,6 +88,7 @@ Partial Class InserTable
         Me.Label3.Size = New System.Drawing.Size(70, 26)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Label3"
+        Me.Label3.Visible = False
         '
         'Label4
         '
@@ -98,6 +101,7 @@ Partial Class InserTable
         Me.Label4.Size = New System.Drawing.Size(71, 26)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Label4"
+        Me.Label4.Visible = False
         '
         'Label5
         '
@@ -110,6 +114,7 @@ Partial Class InserTable
         Me.Label5.Size = New System.Drawing.Size(70, 26)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Label5"
+        Me.Label5.Visible = False
         '
         'Label6
         '
@@ -122,6 +127,7 @@ Partial Class InserTable
         Me.Label6.Size = New System.Drawing.Size(71, 26)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Label6"
+        Me.Label6.Visible = False
         '
         'Label7
         '
@@ -134,6 +140,7 @@ Partial Class InserTable
         Me.Label7.Size = New System.Drawing.Size(70, 26)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Label7"
+        Me.Label7.Visible = False
         '
         'Title
         '
@@ -166,6 +173,7 @@ Partial Class InserTable
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(172, 31)
         Me.TextBox1.TabIndex = 10
+        Me.TextBox1.Visible = False
         '
         'TextBox2
         '
@@ -174,6 +182,7 @@ Partial Class InserTable
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(172, 31)
         Me.TextBox2.TabIndex = 11
+        Me.TextBox2.Visible = False
         '
         'TextBox3
         '
@@ -182,6 +191,7 @@ Partial Class InserTable
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(172, 31)
         Me.TextBox3.TabIndex = 12
+        Me.TextBox3.Visible = False
         '
         'TextBox4
         '
@@ -190,6 +200,7 @@ Partial Class InserTable
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(172, 31)
         Me.TextBox4.TabIndex = 13
+        Me.TextBox4.Visible = False
         '
         'TextBox5
         '
@@ -198,6 +209,7 @@ Partial Class InserTable
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(172, 31)
         Me.TextBox5.TabIndex = 14
+        Me.TextBox5.Visible = False
         '
         'TextBox6
         '
@@ -206,6 +218,7 @@ Partial Class InserTable
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(172, 31)
         Me.TextBox6.TabIndex = 15
+        Me.TextBox6.Visible = False
         '
         'TextBox7
         '
@@ -214,6 +227,7 @@ Partial Class InserTable
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(172, 31)
         Me.TextBox7.TabIndex = 16
+        Me.TextBox7.Visible = False
         '
         'Table
         '
